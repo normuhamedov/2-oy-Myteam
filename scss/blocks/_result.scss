@@ -1,0 +1,78 @@
+.result-section {
+    padding: 140px 0 140px 0;
+    background-image: url("../images/result-bg1.svg"), url("../images/result-bg2.svg");
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+}
+.result h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    color: white; 
+    text-align: center;
+    margin-bottom: 98px;
+}
+.result h2 span{
+    color: #79C8C7;
+}
+.result-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.result-item {
+    text-align: center;
+    max-width: 350px;
+    padding-top: 36px;
+    background-image: url("../images/result-item-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.result-text1 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    color: white;
+    margin-bottom: 24px;   
+}
+.result-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;    
+    color: #79C8C7;
+    margin-bottom: 2px;
+}
+.result-text2 {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px; 
+    color: white;
+    margin-bottom: 32px;
+}
+@media (max-width: 768px) {
+    .result-section {
+        padding: 100px 0 100px;
+        margin: 0 auto;
+    }
+    .result {
+        h2, h2 span {
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 48px;
+        }
+    }
+    .result-list {
+        flex-direction: column;
+    }
+    .result-item {
+        max-width: 573px;
+        margin-bottom: 48px;
+        max-width: 450px;
+    }
+    // SHu xolati 430px Mobile uchun xam ishlaydi!!!!
+}

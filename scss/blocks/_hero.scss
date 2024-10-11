@@ -1,0 +1,105 @@
+.hero-section {
+    background-image: url("../images/hero-bg1.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 740px) top;
+}
+.hero-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-bottom: 250px;
+    background-image: url("../images/hero-bg2.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.hero-title {
+    max-width: 620px;
+    
+}
+.hero-title h1 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+.hero-title h1 span {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    color: #F67E7E;
+}
+.hero-text {
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text span {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: #79C8C7;
+    margin-bottom: 79px;
+}
+.hero-text p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;  
+    color: white;
+}
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 112px;
+    }
+    .hero-wrapper {
+        background-position: bottom center;
+        flex-direction: column;
+        background-size: 50%;
+    }
+    .hero-title {
+        text-align: center;
+        margin: 0 auto;
+        h1,h1 span{
+            font-size: 64px;
+            line-height: 56px;
+        }
+    }
+    .hero-text {
+        p{
+            font-size: 15px;
+            line-height: 28px;
+        }
+        span{
+            display: none;
+        }
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+}
+@media (max-width: 430px) {
+    .hero-wrapper {
+        background-size: 80%;
+    }
+    .hero-title {
+        text-align: center;
+        margin: 0 auto;
+        h1,h1 span{
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+    .hero-text {
+        p{
+            font-size: 15px;
+            line-height: 28px;
+        }
+        span{
+            display: none;
+        }
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+}
