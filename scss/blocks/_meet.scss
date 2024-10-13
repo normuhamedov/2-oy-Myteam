@@ -1,0 +1,136 @@
+.meet-section {
+    background-color: #004047;
+    padding: 140px 0 76px;
+    background-image: url("../images/meet-bg1.svg"), url("../images/meet-bg2.svg");
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+}
+.meet-title {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;   
+    margin-bottom: 64px;
+}
+.meet-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.meet-item {
+    background-color: #012F34;
+    width: 350px;
+    margin-bottom: 76px;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    height: 255px;
+    transition: all 0.3s;
+}
+.meet-item:hover{
+    transform: scale(1.1);
+}
+.meet-item strong{
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px; 
+    color: #79C8C7;
+}
+.meet-item p{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px;
+    color: white;    
+}
+.meet-plus {
+    width: 56px;
+    height: 56px;
+    background-color: #F67E7E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 28px;
+    transition: all 0.3s;
+}
+.meet-plus:hover {
+    background-color: #79C8C7;
+}
+
+.meet-item-end{
+    height: 253px;
+    background-color: #002529;
+    padding: 0 48px 0 48px;
+    text-align: center;
+}
+.meet-item-end p{
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px; 
+}
+.meet-icon-wrap{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.meet-item-end .meet-plus {
+    background-color: #79C8C7;
+    position: relative;
+    top: 50px;
+}
+.meet-item-end .meet-plus:hover {
+    background-color: #F67E7E;
+}
+.meet-icon-wrap a{
+    color: white;
+    transition: all 0.3s;
+}
+.meet-icon-wrap a:hover {
+    color: #F67E7E;
+}
+@media (max-width: 1083px) {
+    .meet-list {
+        justify-content: center;
+        gap: 11px;
+    }
+}
+@media (max-width: 768px) {
+    .meet-section {
+        padding: 100px 0 52px;
+    }
+    .meet-list {
+        justify-content: center;
+        gap: 11px;
+    }
+    .meet-item {
+        width: 281px;
+    }
+    .meet-title {
+        font-size: 32px;
+        line-height: 32px;  
+    }
+    .meet-item-end {
+        width: 281px;
+        padding: 0 10px 0 10px;
+    }
+}
+@media (max-width: 610px) {
+    .meet-item {
+        width: 327px;
+    }
+}
+@media (max-width: 286px) {
+    .meet-item-end .meet-plus{
+        top: 25px;
+    }
+}

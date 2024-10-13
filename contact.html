@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <title>myteam</title>
 </head>
 <body>
@@ -26,8 +24,20 @@
                     </ul>
                 </div>
                 <a class="header-contact-link" href="./contact.html">contact us</a>
+                <button class="header-btn"><img src="./images/header-btn.svg" alt="Button" width="20" height="17"></button>
+                
             </div>
         </div>
+        <nav class="nav-menu">
+            <button class="header__btn-close">
+                <img class="header__close" src="./images/header-btn-close.svg" alt="close">
+            </button>
+            <ul>
+              <li><a class="header-link" href="/">home</a></li>
+              <li><a class="header-link" href="./about.html">about</a></li>
+              <li><a class="header-contact-link" href="./contact.html">contact us</a></li>
+            </ul>
+          </nav>
     </header>
     <main>
         <section class="contact-section">
@@ -106,9 +116,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
